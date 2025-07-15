@@ -18,24 +18,6 @@ This is a simple React application that displays a **Premium Plan card** using *
 - ✅ Toast message on successful "purchase"
 - 📦 Clean and modular component structure
 
----
-
-## 📁 Project Structure
-premium-card-app/
-├── node_modules/
-├── public/
-├── src/
-│ ├── components/
-│ │ └── PremiumCard.js
-│ ├── App.js
-│ ├── index.js
-│ └── index.css
-├── package.json
-└── README.md
-
-
----
-
 ## 🛠️ Getting Started
 
 ### 1. Clone the Repository
