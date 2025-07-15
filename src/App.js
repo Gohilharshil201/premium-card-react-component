@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Layout } from 'antd';
+import PremiumCard from './components/premiumCard';
+
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout style={{ minHeight: '100vh', padding:"0 10px"}}>
+      <Header style={{ backgroundColor: '#001529', color: '#fff', fontSize: 20 }}>
+        Premium Membership
+      </Header>
+      <Content style={{ padding: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap:"20px"}}>
+        <PremiumCard />
+        <PremiumCard /><PremiumCard />
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>©2025 Premium Card Demo With Ant-Design</Footer>
+    </Layout>
+    
   );
 }
 
